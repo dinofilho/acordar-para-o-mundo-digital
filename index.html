@@ -4,56 +4,61 @@
   <meta charset="UTF-8">
   <title>Acordar para o Mundo Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Um espaço para despertar a mente e apoiar um projeto de segurança digital com Bitcoin.">
-  <meta name="keywords" content="ciência, universo, mente, segurança digital, bitcoin, consciência, despertar">
-  <meta name="author" content="dinofilho">
+
+  <!-- Meta tag de verificação do Google -->
+  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #111;
+      background-color: #0f0f0f;
       color: #f0f0f0;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
-      min-height: 100vh;
-      justify-content: flex-start;
-      padding: 20px;
     }
 
-    h1 {
+    header {
+      background-color: #1a1a1a;
+      padding: 30px 20px;
+    }
+
+    header h1 {
       color: #00ff88;
-      margin-bottom: 10px;
       font-size: 2em;
+      margin-bottom: 10px;
     }
 
-    .intro, .conteudo {
+    main {
+      padding: 30px 20px;
+    }
+
+    p {
       max-width: 800px;
       margin: 20px auto;
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 1.2em;
+      line-height: 1.6em;
     }
 
     .wallet {
-      background: #222;
+      background-color: #222;
       padding: 10px 20px;
       border-radius: 8px;
-      margin: 15px 0;
+      display: inline-block;
+      margin: 20px 0;
       font-family: monospace;
+      font-size: 1em;
       word-break: break-word;
     }
 
     button {
       background: #00ff88;
-      border: none;
       color: #111;
+      border: none;
       padding: 10px 20px;
       font-weight: bold;
       border-radius: 6px;
       cursor: pointer;
-      margin-top: 10px;
     }
 
     button:hover {
@@ -61,58 +66,79 @@
     }
 
     .copiado {
-      margin-top: 10px;
       color: #00ff88;
+      margin-top: 10px;
       display: none;
     }
 
-    img {
-      margin-top: 20px;
+    img.qr {
+      margin: 20px 0;
       width: 200px;
       height: 200px;
-      border-radius: 12px;
       border: 2px solid #00ff88;
-    }
-
-    .social a {
-      color: #00ff88;
-      margin: 0 10px;
-      text-decoration: none;
+      border-radius: 10px;
     }
 
     footer {
-      margin-top: 30px;
+      padding: 30px 10px;
+      color: #777;
       font-size: 0.9em;
-      color: #666;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #00ff88;
+      text-decoration: none;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    .contador {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>🌌 Acordar para o Mundo Digital</h1>
 
-  <div class="intro">
-    <p>Bem-vindo a um espaço onde ciência, universo, psicologia e tecnologia se encontram. Todos os dias, novas postagens com reflexões, curiosidades e insights para transformar sua visão de mundo.</p>
-  </div>
+  <header>
+    <h1>Acordar para o Mundo Digital</h1>
+    <p>Reflexões, ciência, consciência, experiências e verdades que podem transformar vidas.</p>
+  </header>
 
-  <div class="conteudo">
-    <h2>🔍 Experimento de Hoje</h2>
-    <p>"A mente tem o poder de moldar a realidade. A ciência já provou que o observador influencia o resultado. E você, o que está observando hoje?"</p>
-  </div>
+  <main>
+    <p>
+      Este espaço é dedicado a despertar a mente humana para os mistérios do universo, da psicologia, da tecnologia e da vida moderna.
+      Aqui você encontrará conteúdos diários que provocam pensamento crítico e ajudam a entender melhor o mundo à sua volta.
+    </p>
 
-  <h2>💰 Apoie com Bitcoin</h2>
-  <div class="wallet" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
-  <button onclick="copiarCarteira()">📋 Copiar carteira</button>
-  <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
+    <p>
+      Se este conteúdo te ajuda ou te inspira, considere apoiar nosso laboratório de segurança digital com uma doação em Bitcoin.
+    </p>
 
-  <div class="social">
-    <p>📤 Compartilhe:</p>
-    <a href="https://wa.me/?text=Conheça%20este%20site%20transformador:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">WhatsApp</a> |
-    <a href="https://twitter.com/intent/tweet?text=Desperte%20sua%20mente!%20Acesse:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">Twitter</a>
-  </div>
+    <div class="wallet" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
+    <br>
+    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
+    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
+
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
+
+    <div class="social">
+      <p>Compartilhe:</p>
+      <a href="https://wa.me/?text=Confira%20este%20projeto%20incr%C3%ADvel:%20https://acordarparaomundodigital.com.br" target="_blank">📲 WhatsApp</a>
+      <a href="https://twitter.com/intent/tweet?text=Explore%20um%20site%20impactante:%20https://acordarparaomundodigital.com.br" target="_blank">🐦 Twitter</a>
+    </div>
+
+    <div class="contador">
+      Visitantes: <img src="https://contador.digitalgratis.com/numerocv/1A1A1A/00FF88/000000/3/0/acordarbtc" alt="Contador de visitas">
+    </div>
+  </main>
 
   <footer>
-    © 2025 • Projeto independente por <strong>dinofilho</strong> • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" target="_blank" style="color:#00ff88;">GitHub</a>
+    © 2025 - Projeto independente. Criado por dinofilho • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" style="color:#00ff88;">GitHub</a>
   </footer>
 
   <script>
@@ -127,5 +153,6 @@
       });
     }
   </script>
+
 </body>
 </html>
