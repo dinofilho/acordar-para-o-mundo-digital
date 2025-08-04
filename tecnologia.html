@@ -1,94 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Acordar para o Mundo Digital - Ciência, psicologia, tecnologia e reflexões para uma nova consciência.">
-  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
-  <title>Acordar para o Mundo Digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologia | Acordar para o Mundo Digital</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #111;
       color: #f0f0f0;
-      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #000;
+      padding: 20px;
       text-align: center;
     }
-
-    header {
-      background-color: #222;
-      padding: 20px;
-    }
-
-    header h1 {
-      color: #00ff88;
+    header h1, footer p {
       margin: 0;
+      color: #00ff88;
     }
-
     nav {
-      margin: 15px 0;
+      background-color: #222;
+      padding: 10px;
+      text-align: center;
     }
-
     nav a {
       color: #00ff88;
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
     main {
       padding: 20px;
     }
-
-    footer {
-      background-color: #222;
-      color: #aaa;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.8em;
+    h2 {
+      color: #00ff88;
     }
-
-    .wallet {
-      margin: 30px auto;
-      background: #222;
-      padding: 10px;
-      border-radius: 10px;
-      max-width: 400px;
-      font-family: monospace;
+    .btc-box {
+      background-color: #222;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .btc-box code {
+      display: block;
+      margin: 10px 0;
       word-break: break-all;
     }
-
-    button {
-      margin-top: 10px;
-      background: #00ff88;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      color: #111;
-    }
-
-    button:hover {
-      background: #00cc66;
-    }
-
-    .copiado {
-      margin-top: 10px;
-      color: #00ff88;
-      font-size: 0.9em;
-      display: none;
-    }
-
-    img {
-      margin-top: 20px;
+    .btc-box img {
       width: 200px;
-      height: 200px;
+      margin-top: 10px;
       border: 2px solid #00ff88;
       border-radius: 10px;
     }
@@ -97,43 +62,31 @@
 <body>
   <header>
     <h1>Acordar para o Mundo Digital</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="universo.html">Universo</a>
-      <a href="psicologia.html">Psicologia</a>
-      <a href="tecnologia.html">Tecnologia</a>
-      <a href="reflexoes.html">Reflexões</a>
-    </nav>
-  </header>
+  </header>  <nav>
+    <a href="index.html">Início</a>
+    <a href="universo.html">Universo</a>
+    <a href="psicologia.html">Psicologia</a>
+    <a href="tecnologia.html">Tecnologia</a>
+    <a href="reflexoes.html">Reflexões</a>
+  </nav>  <main>
+    <h2>Tecnologia</h2>
+    <p>
+      Aqui abordaremos os avanços tecnológicos que estão moldando o nosso mundo:
+    </p>
+    <ul>
+      <li>Inteligência Artificial e seus impactos.</li>
+      <li>Robótica e automação do trabalho.</li>
+      <li>Internet das Coisas (IoT) e conectividade.</li>
+      <li>Privacidade, vigilância e segurança digital.</li>
+      <li>Novas tecnologias e o futuro do cotidiano.</li>
+    </ul><div class="btc-box">
+  <p>Se esse conteúdo foi útil para você, considere apoiar nosso projeto de laboratório de segurança digital com uma doação em Bitcoin:</p>
+  <code>bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</code>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code BTC">
+</div>
 
-  <main>
-    <h2>Desperte sua Consciência</h2>
-    <p>Esse é um espaço para compartilhar conteúdos que podem transformar vidas: ciência, espiritualidade, curiosidades, reflexões e experiências reais.</p>
-
-    <p>Nos ajude a manter esse projeto no ar com uma doação em Bitcoin:</p>
-
-    <div class="wallet" id="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
-    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
-    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
-
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code para doação" />
-  </main>
-
-  <footer>
-    © 2025 - Acordar para o Mundo Digital • Desenvolvido por dinofilho
+  </main>  <footer>
+    <p>© 2025 - Acordar para o Mundo Digital</p>
   </footer>
-
-  <script>
-    function copiarCarteira() {
-      const texto = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(texto).then(() => {
-        const msg = document.getElementById("mensagem");
-        msg.style.display = "block";
-        setTimeout(() => {
-          msg.style.display = "none";
-        }, 2000);
-      });
-    }
-  </script>
 </body>
 </html>
