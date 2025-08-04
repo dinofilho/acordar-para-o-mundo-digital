@@ -1,158 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Acordar para o Mundo Digital</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Meta tag de verificação do Google -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reflexões, ciência, consciência e apoio ao laboratório de segurança digital" />
   <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
-
+  <title>Acordar para o Mundo Digital</title>
   <style>
     body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #0f0f0f;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
       text-align: center;
     }
-
-    header {
-      background-color: #1a1a1a;
-      padding: 30px 20px;
-    }
-
-    header h1 {
+    h1 {
       color: #00ff88;
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2.2em;
     }
-
-    main {
-      padding: 30px 20px;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 20px auto;
+    h2 {
       font-size: 1.2em;
-      line-height: 1.6em;
+      font-weight: normal;
+      margin-bottom: 30px;
     }
-
+    p {
+      max-width: 700px;
+      margin: 20px auto;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
     .wallet {
-      background-color: #222;
-      padding: 10px 20px;
-      border-radius: 8px;
+      background: #111;
       display: inline-block;
-      margin: 20px 0;
-      font-family: monospace;
-      font-size: 1em;
-      word-break: break-word;
-    }
-
-    button {
-      background: #00ff88;
-      color: #111;
-      border: none;
       padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #00cc66;
-    }
-
-    .copiado {
-      color: #00ff88;
       margin-top: 10px;
-      display: none;
+      font-family: monospace;
+      font-size: 0.95em;
+      border-radius: 6px;
     }
-
-    img.qr {
-      margin: 20px 0;
+    .btn-copy {
+      background-color: #00ff88;
+      color: #000;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .qr {
+      margin: 30px auto;
       width: 200px;
-      height: 200px;
-      border: 2px solid #00ff88;
-      border-radius: 10px;
     }
-
-    footer {
-      padding: 30px 10px;
-      color: #777;
+    .footer {
+      margin-top: 40px;
       font-size: 0.9em;
+      color: #aaa;
     }
-
-    .social a {
-      margin: 0 10px;
+    .share {
+      margin-top: 30px;
+    }
+    .share a {
       color: #00ff88;
+      margin: 0 10px;
       text-decoration: none;
-    }
-
-    .social a:hover {
-      text-decoration: underline;
-    }
-
-    .contador {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #ccc;
     }
   </style>
 </head>
 <body>
+  <h1>Acordar para o Mundo Digital</h1>
+  <h2>Reflexões, ciência, consciência, experiências e verdades que podem transformar vidas.</h2>
 
-  <header>
-    <h1>Acordar para o Mundo Digital</h1>
-    <p>Reflexões, ciência, consciência, experiências e verdades que podem transformar vidas.</p>
-  </header>
+  <p>
+    Este espaço é dedicado a despertar a mente humana para os mistérios do universo, da psicologia, da tecnologia e da vida moderna.
+    Aqui você encontrará conteúdos diários que provocam pensamento crítico e ajudam a entender melhor o mundo à sua volta.
+  </p>
 
-  <main>
-    <p>
-      Este espaço é dedicado a despertar a mente humana para os mistérios do universo, da psicologia, da tecnologia e da vida moderna.
-      Aqui você encontrará conteúdos diários que provocam pensamento crítico e ajudam a entender melhor o mundo à sua volta.
-    </p>
+  <p>
+    Se este conteúdo te ajuda ou te inspira, considere apoiar nosso laboratório de segurança digital com uma doação em Bitcoin.
+  </p>
 
-    <p>
-      Se este conteúdo te ajuda ou te inspira, considere apoiar nosso laboratório de segurança digital com uma doação em Bitcoin.
-    </p>
+  <div class="wallet" id="wallet">
+    bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu
+  </div>
+  <button class="btn-copy" onclick="copyWallet()">📋 Copiar carteira</button>
 
-    <div class="wallet" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
-    <br>
-    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
-    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code" />
+  </div>
 
-    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
+  <div class="share">
+    <strong>Compartilhe:</strong><br />
+    <a href="https://wa.me/?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital:%20https://acordarparaomundodigital.com.br" target="_blank">📲 WhatsApp</a>
+    <a href="https://twitter.com/intent/tweet?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital:%20https://acordarparaomundodigital.com.br" target="_blank">🐦 Twitter</a>
+  </div>
 
-    <div class="social">
-      <p>Compartilhe:</p>
-      <a href="https://wa.me/?text=Confira%20este%20projeto%20incr%C3%ADvel:%20https://acordarparaomundodigital.com.br" target="_blank">📲 WhatsApp</a>
-      <a href="https://twitter.com/intent/tweet?text=Explore%20um%20site%20impactante:%20https://acordarparaomundodigital.com.br" target="_blank">🐦 Twitter</a>
-    </div>
-
-    <div class="contador">
-      Visitantes: <img src="https://contador.digitalgratis.com/numerocv/1A1A1A/00FF88/000000/3/0/acordarbtc" alt="Contador de visitas">
-    </div>
-  </main>
-
-  <footer>
-    © 2025 - Projeto independente. Criado por dinofilho • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" style="color:#00ff88;">GitHub</a>
-  </footer>
+  <div class="footer">
+    Visitantes: 📈 <span id="counter">Contador de visitas</span><br />
+    © 2025 - Projeto independente. Criado por dinofilho • <a href="https://github.com/dinofilho" style="color:#00ff88;">GitHub</a>
+  </div>
 
   <script>
-    function copiarCarteira() {
-      const texto = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(texto).then(() => {
-        const msg = document.getElementById("mensagem");
-        msg.style.display = "block";
-        setTimeout(() => {
-          msg.style.display = "none";
-        }, 2000);
+    function copyWallet() {
+      const wallet = document.getElementById("wallet").innerText;
+      navigator.clipboard.writeText(wallet).then(() => {
+        alert("Endereço Bitcoin copiado!");
       });
     }
   </script>
-
 </body>
 </html>
