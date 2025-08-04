@@ -4,106 +4,128 @@
   <meta charset="UTF-8">
   <title>Acordar para o Mundo Digital</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um espaço para despertar a mente e apoiar um projeto de segurança digital com Bitcoin.">
+  <meta name="keywords" content="ciência, universo, mente, segurança digital, bitcoin, consciência, despertar">
+  <meta name="author" content="dinofilho">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #121212;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-    }
-
-    header {
-      background-color: #00ff88;
-      color: #121212;
+      min-height: 100vh;
+      justify-content: flex-start;
       padding: 20px;
-      font-size: 1.6em;
     }
 
-    main {
-      padding: 30px 15px;
+    h1 {
+      color: #00ff88;
+      margin-bottom: 10px;
+      font-size: 2em;
     }
 
-    section {
-      margin: 40px 0;
+    .intro, .conteudo {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
 
-    .bitcoin {
-      font-family: monospace;
+    .wallet {
       background: #222;
-      padding: 15px;
-      border-radius: 10px;
-      margin: 15px auto;
-      width: fit-content;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 15px 0;
+      font-family: monospace;
+      word-break: break-word;
     }
 
     button {
-      background-color: #00ff88;
-      color: #121212;
+      background: #00ff88;
       border: none;
+      color: #111;
       padding: 10px 20px;
-      margin: 10px;
-      font-size: 1em;
+      font-weight: bold;
       border-radius: 6px;
       cursor: pointer;
+      margin-top: 10px;
     }
 
     button:hover {
-      background-color: #00cc66;
+      background: #00cc66;
+    }
+
+    .copiado {
+      margin-top: 10px;
+      color: #00ff88;
+      display: none;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      border: 2px solid #00ff88;
+    }
+
+    .social a {
+      color: #00ff88;
+      margin: 0 10px;
+      text-decoration: none;
     }
 
     footer {
-      font-size: 0.8em;
-      color: #888;
-      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
+  <h1>🌌 Acordar para o Mundo Digital</h1>
 
-  <header>
-    🌍 Acordar para o Mundo Digital
-  </header>
+  <div class="intro">
+    <p>Bem-vindo a um espaço onde ciência, universo, psicologia e tecnologia se encontram. Todos os dias, novas postagens com reflexões, curiosidades e insights para transformar sua visão de mundo.</p>
+  </div>
 
-  <main>
-    <section>
-      <h2>Consciência, Ciência e Transformação</h2>
-      <p>Uma página para despertar mentes com informações sobre o universo, psicologia, tecnologia, criatividade e reflexões do cotidiano.</p>
-    </section>
+  <div class="conteudo">
+    <h2>🔍 Experimento de Hoje</h2>
+    <p>"A mente tem o poder de moldar a realidade. A ciência já provou que o observador influencia o resultado. E você, o que está observando hoje?"</p>
+  </div>
 
-    <section>
-      <h3>Ajude nosso projeto com Bitcoin</h3>
-      <p>Sua doação nos ajuda a continuar desenvolvendo conteúdo consciente e pesquisas em segurança digital.</p>
-      <div class="bitcoin" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
-      <button onclick="copiar()">📋 Copiar Carteira</button>
-      <p id="msg" style="display:none; color: #00ff88;">Copiado!</p>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
-    </section>
+  <h2>💰 Apoie com Bitcoin</h2>
+  <div class="wallet" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
+  <button onclick="copiarCarteira()">📋 Copiar carteira</button>
+  <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
 
-    <section>
-      <h3>Compartilhe</h3>
-      <a href="https://wa.me/?text=Confira%20essa%20página%20incrível:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">📲 WhatsApp</a>
-      <br>
-      <a href="https://twitter.com/intent/tweet?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital!%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">🐦 Twitter</a>
-    </section>
-  </main>
+  <div class="social">
+    <p>📤 Compartilhe:</p>
+    <a href="https://wa.me/?text=Conheça%20este%20site%20transformador:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">WhatsApp</a> |
+    <a href="https://twitter.com/intent/tweet?text=Desperte%20sua%20mente!%20Acesse:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">Twitter</a>
+  </div>
 
   <footer>
-    © 2025 - Criado por dinofilho
+    © 2025 • Projeto independente por <strong>dinofilho</strong> • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" target="_blank" style="color:#00ff88;">GitHub</a>
   </footer>
 
   <script>
-    function copiar() {
+    function copiarCarteira() {
       const texto = document.getElementById("wallet").innerText;
       navigator.clipboard.writeText(texto).then(() => {
-        document.getElementById("msg").style.display = "block";
+        const msg = document.getElementById("mensagem");
+        msg.style.display = "block";
         setTimeout(() => {
-          document.getElementById("msg").style.display = "none";
+          msg.style.display = "none";
         }, 2000);
       });
     }
   </script>
-
 </body>
 </html>
