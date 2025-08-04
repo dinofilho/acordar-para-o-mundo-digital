@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
+  <title>Acordar para o Mundo Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Acordar para o Mundo Digital</h1>
+    <nav>
+      <ul>
+        <li><a href="#ciencia">Ciência</a></li>
+        <li><a href="#universo">Universo</a></li>
+        <li><a href="#psicologia">Psicologia</a></li>
+        <li><a href="#reflexoes">Reflexões</a></li>
+        <li><a href="#doacoes">Doações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Explore. Conscientize. Desperte.</h2>
+    <p>Um projeto que une ciência, mente e consciência para transformar vidas.</p>
+  </section>
+
+  <main>
+    <section id="ciencia">
+      <h2>Ciência & Tecnologia</h2>
+      <p>Últimas descobertas científicas e experiências práticas.</p>
+    </section>
+
+    <section id="universo">
+      <h2>O Universo e a Consciência</h2>
+      <p>Explore os mistérios cósmicos e a conexão com nossa mente.</p>
+    </section>
+
+    <section id="psicologia">
+      <h2>Psicologia e Emoção</h2>
+      <p>Conteúdos que ajudam emocional e mentalmente quem precisa.</p>
+    </section>
+
+    <section id="reflexoes">
+      <h2>Reflexões para o Dia a Dia</h2>
+      <p>Pensamentos que despertam o melhor em cada ser humano.</p>
+    </section>
+
+    <section id="doacoes" class="doacoes">
+      <h2>Apoie o Projeto com Bitcoin</h2>
+      <p>Você pode contribuir com qualquer valor para ajudar nosso laboratório de segurança digital.</p>
+      <p><strong>Carteira BTC:</strong> bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</p>
+      <img src="qrcode.png" alt="QR Code da carteira Bitcoin" width="180">
+      <button onclick="navigator.clipboard.writeText('bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a')">📋 Copiar carteira</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Acordar para o Mundo Digital. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
