@@ -1,73 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acordar para o Mundo Digital - Ciência, psicologia, tecnologia e reflexões para uma nova consciência.">
+  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
   <title>Acordar para o Mundo Digital</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f0f0f0;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px 20px;
     }
 
-    h1 {
+    header {
+      background-color: #222;
+      padding: 20px;
+    }
+
+    header h1 {
       color: #00ff88;
-      font-size: 32px;
-      margin-bottom: 10px;
+      margin: 0;
     }
 
-    h2 {
-      color: #ccc;
-      font-size: 20px;
-      margin-bottom: 30px;
+    nav {
+      margin: 15px 0;
     }
 
-    a {
-      display: block;
-      margin: 10px 0;
-      font-size: 18px;
+    nav a {
       color: #00ff88;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
+    main {
+      padding: 20px;
+    }
+
     footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
+      background-color: #222;
+      color: #aaa;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.8em;
     }
 
-    img.qrcode {
-      margin-top: 15px;
-      width: 150px;
+    .wallet {
+      margin: 30px auto;
+      background: #222;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 400px;
+      font-family: monospace;
+      word-break: break-all;
     }
 
-    .btc-address {
+    button {
       margin-top: 10px;
-      font-size: 12px;
-      color: #ccc;
+      background: #00ff88;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #111;
+    }
+
+    button:hover {
+      background: #00cc66;
+    }
+
+    .copiado {
+      margin-top: 10px;
+      color: #00ff88;
+      font-size: 0.9em;
+      display: none;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #00ff88;
+      border-radius: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Acordar para o Mundo Digital</h1>
-  <h2>Reflexões, ciência, psicologia e tecnologia para a era da transformação digital</h2>
+  <header>
+    <h1>Acordar para o Mundo Digital</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="universo.html">Universo</a>
+      <a href="psicologia.html">Psicologia</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="reflexoes.html">Reflexões</a>
+    </nav>
+  </header>
 
-  <a href="universo.html">🌌 Universo e Consciência</a>
-  <a href="psicologia.html">🧠 Psicologia e Consciência</a>
-  <a href="tecnologia.html">🤖 Tecnologia e Inovação</a>
-  <a href="reflexoes.html">💭 Reflexões e Consciência</a>
+  <main>
+    <h2>Desperte sua Consciência</h2>
+    <p>Esse é um espaço para compartilhar conteúdos que podem transformar vidas: ciência, espiritualidade, curiosidades, reflexões e experiências reais.</p>
+
+    <p>Nos ajude a manter esse projeto no ar com uma doação em Bitcoin:</p>
+
+    <div class="wallet" id="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
+    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
+    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code para doação" />
+  </main>
 
   <footer>
-    <p>Projeto independente. Se este conteúdo te ajuda, apoie com qualquer valor via Bitcoin:</p>
-    <img class="qrcode" src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu" alt="QR Code Bitcoin">
-    <p class="btc-address">Carteira: <br>bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</p>
+    © 2025 - Acordar para o Mundo Digital • Desenvolvido por dinofilho
   </footer>
+
+  <script>
+    function copiarCarteira() {
+      const texto = document.getElementById("wallet").innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        const msg = document.getElementById("mensagem");
+        msg.style.display = "block";
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 2000);
+      });
+    }
+  </script>
 </body>
 </html>
