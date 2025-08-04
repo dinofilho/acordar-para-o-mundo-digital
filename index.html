@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acordar para o Mundo Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background-color: #00ff88;
+      color: #121212;
+      padding: 20px;
+      font-size: 1.6em;
+    }
+
+    main {
+      padding: 30px 15px;
+    }
+
+    section {
+      margin: 40px 0;
+    }
+
+    .bitcoin {
+      font-family: monospace;
+      background: #222;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px auto;
+      width: fit-content;
+    }
+
+    button {
+      background-color: #00ff88;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00cc66;
+    }
+
+    footer {
+      font-size: 0.8em;
+      color: #888;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🌍 Acordar para o Mundo Digital
+  </header>
+
+  <main>
+    <section>
+      <h2>Consciência, Ciência e Transformação</h2>
+      <p>Uma página para despertar mentes com informações sobre o universo, psicologia, tecnologia, criatividade e reflexões do cotidiano.</p>
+    </section>
+
+    <section>
+      <h3>Ajude nosso projeto com Bitcoin</h3>
+      <p>Sua doação nos ajuda a continuar desenvolvendo conteúdo consciente e pesquisas em segurança digital.</p>
+      <div class="bitcoin" id="wallet">bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a</div>
+      <button onclick="copiar()">📋 Copiar Carteira</button>
+      <p id="msg" style="display:none; color: #00ff88;">Copiado!</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code Bitcoin">
+    </section>
+
+    <section>
+      <h3>Compartilhe</h3>
+      <a href="https://wa.me/?text=Confira%20essa%20página%20incrível:%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">📲 WhatsApp</a>
+      <br>
+      <a href="https://twitter.com/intent/tweet?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital!%20https://capable-cucurucho-0f9fae.netlify.app" target="_blank">🐦 Twitter</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 - Criado por dinofilho
+  </footer>
+
+  <script>
+    function copiar() {
+      const texto = document.getElementById("wallet").innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        document.getElementById("msg").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("msg").style.display = "none";
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
