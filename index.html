@@ -1,9 +1,148 @@
-<h2>Bem-vindo ao Projeto "Acordar para o Mundo Digital"</h2>
-<p>Este site nasceu com a missão de despertar a consciência humana para temas que impactam diretamente nossa vida. Aqui reunimos ciência, tecnologia, universo, psicologia e reflexões diárias que inspiram e transformam.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acordar para o Mundo Digital</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
 
-<p>Além disso, nosso projeto é financiado de forma colaborativa. Se você acredita no poder do conhecimento e quer nos ajudar a manter esta plataforma no ar, considere fazer uma doação em Bitcoin:</p>
+    header {
+      background-color: #000;
+      padding: 20px;
+    }
 
-<div class="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
-<button onclick="copiarCarteira()">📋 Copiar carteira</button>
-<div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
-<img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code">
+    nav a {
+      color: #00ff88;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin-top: 40px;
+      color: #00ff88;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    .btn-group {
+      margin: 30px;
+    }
+
+    .btn-group a {
+      background: #00ff88;
+      color: #000;
+      padding: 12px 24px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .btn-group a:hover {
+      background-color: #00cc66;
+    }
+
+    .wallet {
+      background: #222;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 20px auto;
+      font-family: monospace;
+      word-break: break-all;
+      display: inline-block;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #00ff88;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .copiado {
+      color: #00ff88;
+      margin-top: 10px;
+      font-size: 0.9em;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="universo.html">Universo</a>
+      <a href="psicologia.html">Psicologia</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="reflexoes.html">Reflexões</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Acordar para o Mundo Digital</h1>
+    <p>
+      Este projeto tem como objetivo despertar a consciência das pessoas por meio de conteúdos informativos, científicos, filosóficos e psicológicos. Unindo conhecimento e reflexão com o poder da tecnologia, buscamos transformar mentes e corações. 🚀
+    </p>
+
+    <div class="btn-group">
+      <a href="universo.html">Explorar o Universo</a>
+      <a href="psicologia.html">Refletir com a Psicologia</a>
+      <a href="tecnologia.html">Conhecer a Tecnologia</a>
+      <a href="reflexoes.html">Ler Reflexões</a>
+    </div>
+
+    <h2>💚 Apoie o projeto</h2>
+    <p>Você pode contribuir com doações em Bitcoin para mantermos o site e o laboratório de segurança digital:</p>
+
+    <div class="wallet" id="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
+    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
+    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
+
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code Bitcoin">
+  </main>
+
+  <footer>
+    © 2025 - Projeto Acordar para o Mundo Digital • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" target="_blank" style="color:#00ff88;">GitHub</a>
+  </footer>
+
+  <script>
+    function copiarCarteira() {
+      const texto = document.getElementById("wallet").innerText;
+      navigator.clipboard.writeText(texto).then(() => {
+        const msg = document.getElementById("mensagem");
+        msg.style.display = "block";
+        setTimeout(() => {
+          msg.style.display = "none";
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
