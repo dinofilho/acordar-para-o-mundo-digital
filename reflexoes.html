@@ -1,139 +1,45 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Acordar para o Mundo Digital - Ciência, psicologia, tecnologia e reflexões para uma nova consciência.">
-  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
-  <title>Acordar para o Mundo Digital</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-
-    header {
-      background-color: #222;
-      padding: 20px;
-    }
-
-    header h1 {
-      color: #00ff88;
-      margin: 0;
-    }
-
-    nav {
-      margin: 15px 0;
-    }
-
-    nav a {
-      color: #00ff88;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #222;
-      color: #aaa;
-      padding: 15px;
-      margin-top: 30px;
-      font-size: 0.8em;
-    }
-
-    .wallet {
-      margin: 30px auto;
-      background: #222;
-      padding: 10px;
-      border-radius: 10px;
-      max-width: 400px;
-      font-family: monospace;
-      word-break: break-all;
-    }
-
-    button {
-      margin-top: 10px;
-      background: #00ff88;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      color: #111;
-    }
-
-    button:hover {
-      background: #00cc66;
-    }
-
-    .copiado {
-      margin-top: 10px;
-      color: #00ff88;
-      font-size: 0.9em;
-      display: none;
-    }
-
-    img {
-      margin-top: 20px;
-      width: 200px;
-      height: 200px;
-      border: 2px solid #00ff88;
-      border-radius: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflexões | Acordar para o Mundo Digital</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Acordar para o Mundo Digital</h1>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="universo.html">Universo</a>
-      <a href="psicologia.html">Psicologia</a>
-      <a href="tecnologia.html">Tecnologia</a>
-      <a href="reflexoes.html">Reflexões</a>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="universo.html">Universo</a></li>
+        <li><a href="psicologia.html">Psicologia</a></li>
+        <li><a href="tecnologia.html">Tecnologia</a></li>
+        <li><a href="reflexoes.html" class="active">Reflexões</a></li>
+      </ul>
     </nav>
-  </header>
+  </header>  <main>
+    <section>
+      <h2>Reflexões</h2>
+      <p>Este espaço é dedicado a pensamentos que desafiam a lógica comum, despertam emoções e provocam questionamentos sobre a vida, o tempo, o propósito e o universo em que estamos inseridos. Aqui você encontrará textos que exploram a consciência, a ética, a espiritualidade e o impacto das nossas escolhas no mundo.</p><article>
+    <h3>Quem somos quando ninguém está olhando?</h3>
+    <p>Em um mundo cada vez mais digital, a autenticidade se torna um ato de resistência. Quando desconectamos, ainda somos quem mostramos ser?</p>
+  </article>
 
-  <main>
-    <h2>Desperte sua Consciência</h2>
-    <p>Esse é um espaço para compartilhar conteúdos que podem transformar vidas: ciência, espiritualidade, curiosidades, reflexões e experiências reais.</p>
+  <article>
+    <h3>Reflexão sobre a pressa</h3>
+    <p>A pressa nos rouba o presente. Que possamos desacelerar, respirar fundo e valorizar cada instante — pois é nele que a vida acontece.</p>
+  </article>
+</section>
 
-    <p>Nos ajude a manter esse projeto no ar com uma doação em Bitcoin:</p>
+<section class="doacao">
+  <h3>Apoie este projeto</h3>
+  <p>Se este conteúdo tocou sua mente ou coração, considere apoiar o laboratório de segurança digital com uma doação em Bitcoin:</p>
+  <div class="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
+  <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code BTC">
+</section>
 
-    <div class="wallet" id="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
-    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
-    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
-
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code para doação" />
-  </main>
-
-  <footer>
-    © 2025 - Acordar para o Mundo Digital • Desenvolvido por dinofilho
+  </main>  <footer>
+    <p>© 2025 - Acordar para o Mundo Digital | <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" target="_blank">GitHub</a></p>
   </footer>
-
-  <script>
-    function copiarCarteira() {
-      const texto = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(texto).then(() => {
-        const msg = document.getElementById("mensagem");
-        msg.style.display = "block";
-        setTimeout(() => {
-          msg.style.display = "none";
-        }, 2000);
-      });
-    }
-  </script>
 </body>
 </html>
