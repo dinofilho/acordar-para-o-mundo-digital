@@ -1,113 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Reflexões, ciência, consciência e apoio ao laboratório de segurança digital" />
-  <meta name="google-site-verification" content="o-1v3vYjUSSHymGItXhAvCIz7jyGOOEArxHYs9jXD9w" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acordar para o Mundo Digital</title>
   <style>
     body {
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px;
     }
+
     h1 {
       color: #00ff88;
-      font-size: 2.2em;
+      font-size: 32px;
+      margin-bottom: 10px;
     }
+
     h2 {
-      font-size: 1.2em;
-      font-weight: normal;
+      color: #ccc;
+      font-size: 20px;
       margin-bottom: 30px;
     }
-    p {
-      max-width: 700px;
-      margin: 20px auto;
-      line-height: 1.6;
-      font-size: 1.1em;
-    }
-    .wallet {
-      background: #111;
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      font-family: monospace;
-      font-size: 0.95em;
-      border-radius: 6px;
-    }
-    .btn-copy {
-      background-color: #00ff88;
-      color: #000;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    .qr {
-      margin: 30px auto;
-      width: 200px;
-    }
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .share {
-      margin-top: 30px;
-    }
-    .share a {
+
+    a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
       color: #00ff88;
-      margin: 0 10px;
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    img.qrcode {
+      margin-top: 15px;
+      width: 150px;
+    }
+
+    .btc-address {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <h1>Acordar para o Mundo Digital</h1>
-  <h2>Reflexões, ciência, consciência, experiências e verdades que podem transformar vidas.</h2>
+  <h2>Reflexões, ciência, psicologia e tecnologia para a era da transformação digital</h2>
 
-  <p>
-    Este espaço é dedicado a despertar a mente humana para os mistérios do universo, da psicologia, da tecnologia e da vida moderna.
-    Aqui você encontrará conteúdos diários que provocam pensamento crítico e ajudam a entender melhor o mundo à sua volta.
-  </p>
+  <a href="universo.html">🌌 Universo e Consciência</a>
+  <a href="psicologia.html">🧠 Psicologia e Consciência</a>
+  <a href="tecnologia.html">🤖 Tecnologia e Inovação</a>
+  <a href="reflexoes.html">💭 Reflexões e Consciência</a>
 
-  <p>
-    Se este conteúdo te ajuda ou te inspira, considere apoiar nosso laboratório de segurança digital com uma doação em Bitcoin.
-  </p>
-
-  <div class="wallet" id="wallet">
-    bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu
-  </div>
-  <button class="btn-copy" onclick="copyWallet()">📋 Copiar carteira</button>
-
-  <div class="qr">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code" />
-  </div>
-
-  <div class="share">
-    <strong>Compartilhe:</strong><br />
-    <a href="https://wa.me/?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital:%20https://acordarparaomundodigital.com.br" target="_blank">📲 WhatsApp</a>
-    <a href="https://twitter.com/intent/tweet?text=Conheça%20o%20site%20Acordar%20para%20o%20Mundo%20Digital:%20https://acordarparaomundodigital.com.br" target="_blank">🐦 Twitter</a>
-  </div>
-
-  <div class="footer">
-    Visitantes: 📈 <span id="counter">Contador de visitas</span><br />
-    © 2025 - Projeto independente. Criado por dinofilho • <a href="https://github.com/dinofilho" style="color:#00ff88;">GitHub</a>
-  </div>
-
-  <script>
-    function copyWallet() {
-      const wallet = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(wallet).then(() => {
-        alert("Endereço Bitcoin copiado!");
-      });
-    }
-  </script>
+  <footer>
+    <p>Projeto independente. Se este conteúdo te ajuda, apoie com qualquer valor via Bitcoin:</p>
+    <img class="qrcode" src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu" alt="QR Code Bitcoin">
+    <p class="btc-address">Carteira: <br>bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</p>
+  </footer>
 </body>
 </html>
