@@ -1,108 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saúde | Acordar para o Mundo Digital</title>
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
       background-color: #ffffff;
-      color: #333;
+      color: #2c2c2c;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
     }
 
     header {
-      background-color: #f4f4f4;
-      padding: 20px;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      padding: 20px 0 10px;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 26px;
+      font-size: 28px;
+      color: #2c2c2c;
     }
 
     nav {
-      margin-top: 10px;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
     nav a {
+      margin: 0 12px;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 16px;
-      margin: 5px;
-      border-radius: 6px;
-      display: inline-block;
+      font-size: 17px;
     }
 
-    nav a[href="index.html"] { background-color: #ffd700; color: #000; }
-    nav a[href="universo.html"] { background-color: #00bfff; color: #000; }
-    nav a[href="psicologia.html"] { background-color: #ff69b4; color: #000; }
-    nav a[href="tecnologia.html"] { background-color: #7fff00; color: #000; }
-    nav a[href="reflexoes.html"] { background-color: #ff4500; color: #fff; }
-    nav a[href="tempo.html"] { background-color: #9370db; color: #fff; }
-    nav a[href="saude.html"] { background-color: #00ff7f; color: #000; }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+    /* Botões coloridos */
+    .btn-inicio      { color: #8e44ad; }
+    .btn-universo    { color: #6c5ce7; }
+    .btn-psicologia  { color: #e84393; }
+    .btn-tecnologia  { color: #0984e3; }
+    .btn-reflexoes   { color: #fd7e14; }
+    .btn-tempo       { color: #00b894; }
+    .btn-saude       { color: #27ae60; }
 
     h2 {
-      color: #228B22;
-    }
-
-    .wallet-box {
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 8px;
+      color: #27ae60;
       margin-top: 30px;
-      text-align: center;
-      border: 1px solid #ddd;
     }
 
-    .wallet-address {
-      font-family: monospace;
-      background: #eaeaea;
-      padding: 10px;
-      border-radius: 5px;
-      word-break: break-word;
-      margin-bottom: 10px;
-      display: inline-block;
-      color: #333;
-    }
-
-    button {
-      background-color: #32cd32;
-      color: #fff;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-
-    button:hover {
-      background-color: #28a428;
-    }
-
-    img.qr {
-      margin-top: 10px;
-      width: 180px;
-      height: auto;
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
     }
 
     footer {
-      text-align: center;
       margin-top: 40px;
-      padding: 20px;
+      text-align: center;
       font-size: 14px;
       color: #666;
-      background-color: #f4f4f4;
-      border-top: 1px solid #ccc;
     }
   </style>
 </head>
@@ -111,65 +67,50 @@
   <header>
     <h1>Acordar para o Mundo Digital</h1>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="universo.html">Universo</a>
-      <a href="psicologia.html">Psicologia</a>
-      <a href="tecnologia.html">Tecnologia</a>
-      <a href="reflexoes.html">Reflexões</a>
-      <a href="tempo.html">Tempo</a>
-      <a href="saude.html">Saúde</a>
+      <a href="index.html" class="btn-inicio">Início</a>
+      <a href="universo.html" class="btn-universo">Universo</a>
+      <a href="psicologia.html" class="btn-psicologia">Psicologia</a>
+      <a href="tecnologia.html" class="btn-tecnologia">Tecnologia</a>
+      <a href="reflexoes.html" class="btn-reflexoes">Reflexões</a>
+      <a href="tempo.html" class="btn-tempo">Tempo</a>
+      <a href="saude.html" class="btn-saude">Saúde</a>
     </nav>
   </header>
 
-  <div class="container">
+  <main>
     <h2>🧬 Saúde: Corpo, Mente e Equilíbrio</h2>
+
     <p>Um corpo saudável é a base para uma mente em paz. Nesta seção, abordamos a importância da alimentação consciente, da prática regular de atividades físicas e do cuidado com o bem-estar emocional. A verdadeira saúde vai além da ausência de doenças — ela é a harmonia entre corpo, mente e espírito.</p>
 
-    <p>🥦 Alimentar-se bem é um ato de amor próprio. Evitar excessos, escolher alimentos naturais e compreender o impacto do que comemos é essencial para viver com mais energia e disposição.</p>
+    <p>🥦 <strong>Alimentar-se bem</strong> é um ato de amor próprio. Evitar excessos, escolher alimentos naturais e compreender o impacto do que comemos é essencial para viver com mais energia e disposição.</p>
 
-    <p>🏃‍♂️ O movimento é vida. Caminhar, dançar, respirar profundamente... pequenas atitudes diárias que despertam o corpo e renovam a mente.</p>
+    <p>🏃‍♂️ <strong>O movimento é vida.</strong> Caminhar, dançar, respirar profundamente... pequenas atitudes diárias que despertam o corpo e renovam a mente.</p>
 
-    <p>🧘 Saúde também é silêncio interior, sono reparador e pensamentos positivos. É saber respeitar os próprios limites e buscar equilíbrio em meio ao caos.</p>
+    <p>🧘 <strong>Saúde também é silêncio interior</strong>, sono reparador e pensamentos positivos. É saber respeitar os próprios limites e buscar equilíbrio em meio ao caos.</p>
 
-    <p>Esta seção é um convite para desacelerar, cuidar de si e viver com mais presença e vitalidade. Vamos juntos despertar o poder da saúde integral.</p>
-
-    <div class="wallet-box">
-      <h3>💡 Apoie este Projeto com Bitcoin</h3>
-      <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
-
-      <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
-      <button onclick="copyAddress()">📋 Copiar carteira</button><br />
-      <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
-      <h2>🍎 Alimentos que Curam</h2>
-    <p>Nem sempre o remédio está na farmácia. A natureza oferece uma farmácia viva em forma de frutas, verduras, ervas e raízes. O alimento é o primeiro remédio do ser humano — e também o mais poderoso. Cúrcuma, gengibre, alho, limão e vegetais verdes são verdadeiros escudos naturais contra inflamações e desequilíbrios.</p>
-    <p>O segredo está na simplicidade. Comer o que vem da terra, do jeito mais natural possível, é reconectar o corpo à sua essência original.</p>
+    <p>🍋 <strong>Limão e vegetais verdes</strong> são verdadeiros escudos naturais contra inflamações e desequilíbrios. O segredo está na simplicidade. Comer o que vem da terra, do jeito mais natural possível, é reconectar o corpo à sua essência original.</p>
 
     <h2>🧠 Emoções e o Sistema Imunológico</h2>
     <p>Ciência e espiritualidade já concordam: emoções influenciam diretamente a saúde. Raiva constante, tristeza reprimida e medo crônico são como venenos silenciosos para o corpo. Por outro lado, alegria, gratidão e esperança têm efeitos regeneradores reais.</p>
+
     <p>Quando cuidamos do emocional, fortalecemos o sistema imunológico. Uma mente em paz é o maior escudo contra doenças.</p>
 
     <h2>💨 Respiração e Energia Vital</h2>
     <p>Respirar profundamente não é apenas uma técnica de relaxamento — é um portal para a cura. A respiração consciente oxigena o corpo, acalma o sistema nervoso e equilibra as emoções.</p>
-    <p>Inspire fundo... expire devagar. Apenas isso, algumas vezes por dia, já muda tudo. A energia vital volta a circular. A vida volta a pulsar.</p>
+
+    <p><strong>Inspire fundo... expire devagar.</strong> Apenas isso, algumas vezes por dia, já muda tudo. A energia vital volta a circular. A vida volta a pulsar.</p>
 
     <h2>🌿 Saúde como Espiritualidade Prática</h2>
     <p>Cuidar da saúde é um ato espiritual. É reconhecer o corpo como um templo. É honrar a dádiva de estar vivo.</p>
+
     <p>Não precisamos buscar milagres fora de nós. O milagre acontece quando fazemos escolhas melhores todos os dias. Quando colocamos amor no que comemos, no que pensamos e no que sentimos.</p>
 
-    <p>✨ A verdadeira cura começa no momento em que decidimos viver com mais consciência e presença. Este é o seu convite: cuide-se como quem cuida de um tesouro sagrado. Porque é isso que você é.</p>
+    <p>✨ <strong>A verdadeira cura começa no momento em que decidimos viver com mais consciência e presença.</strong> Este é o seu convite: cuide-se como quem cuida de um tesouro sagrado. Porque é isso que você é.</p>
+  </main>
 
   <footer>
     © 2025 Acordar para o Mundo Digital. Todos os direitos reservados.
   </footer>
-
-  <script>
-    function copyAddress() {
-      const address = document.getElementById('btcAddress').innerText;
-      navigator.clipboard.writeText(address).then(() => {
-        alert("Carteira copiada com sucesso!");
-      });
-    }
-  </script>
 
 </body>
 </html>
