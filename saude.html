@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saúde | Acordar para o Mundo Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #4caf50;
+    }
+
+    .wallet-box {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .wallet-address {
+      font-family: monospace;
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+      word-break: break-all;
+      margin-bottom: 10px;
+      display: inline-block;
+      color: #0f0;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #000;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      background-color: #3e9142;
+    }
+
+    img.qr {
+      margin-top: 10px;
+      width: 180px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Acordar para o Mundo Digital</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="universo.html">Universo</a>
+      <a href="psicologia.html">Psicologia</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="reflexoes.html">Reflexões</a>
+      <a href="tempo.html">Tempo</a>
+      <a href="saude.html">Saúde</a>
+      <a href="cura-do-cancer.html">Cura do Câncer</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>🌿 Saúde: Corpo, Mente e Equilíbrio</h2>
+    <p>Um corpo saudável é a base para uma mente em paz. Nesta seção, abordamos a importância da alimentação consciente, da prática regular de atividades físicas e do cuidado com o bem-estar emocional. A verdadeira saúde vai além da ausência de doenças — ela é a harmonia entre corpo, mente e espírito.</p>
+
+    <p>🥦 Alimentar-se bem é um ato de amor próprio. Evitar excessos, escolher alimentos naturais e compreender o impacto do que comemos é essencial para viver com mais energia e disposição.</p>
+
+    <p>🏃‍♂️ O movimento é vida. Caminhar, dançar, respirar profundamente... pequenas atitudes diárias que despertam o corpo e renovam a mente.</p>
+
+    <p>🧘 Saúde também é silêncio interior, sono reparador e pensamentos positivos. É saber respeitar os próprios limites e buscar equilíbrio em meio ao caos.</p>
+
+    <p>Esta seção é um convite para desacelerar, cuidar de si e viver com mais presença e vitalidade. Vamos juntos despertar o poder da saúde integral.</p>
+
+    <div class="wallet-box">
+      <h3>💡 Apoie este Projeto com Bitcoin</h3>
+      <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
+      <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
+      <button onclick="copyAddress()">📋 Copiar carteira</button><br />
+      <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
+      <p>Compartilhe: 📲 WhatsApp | 🐦 Twitter</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Acordar para o Mundo Digital. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function copyAddress() {
+      const address = document.getElementById('btcAddress').innerText;
+      navigator.clipboard.writeText(address).then(() => {
+        alert("Carteira copiada com sucesso!");
+      });
+    }
+  </script>
+
+</body>
+</html>
