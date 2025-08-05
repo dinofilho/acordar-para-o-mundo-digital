@@ -3,111 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Reflexões sobre a vida, o tempo, o comportamento e a transformação humana.">
-  <title>Reflexões - Acordar para o Mundo Digital</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Reflexões | Acordar para o Mundo Digital</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  <script>
+    function copiarCarteira() {
+      const carteira = document.getElementById("carteira");
+      navigator.clipboard.writeText(carteira.innerText).then(() => {
+        alert("Endereço BTC copiado!");
+      });
+    }
+  </script>
 </head>
-<body>
-  <header>
-    <h1>Acordar para o Mundo Digital</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="universo.html">Universo</a>
-      <a href="psicologia.html">Psicologia</a>
-      <a href="tecnologia.html">Tecnologia</a>
-      <a href="reflexoes.html">Reflexões</a>
+<body class="bg-gray-900 text-white font-sans">
+
+  <header class="bg-black p-4 text-center">
+    <h1 class="text-2xl font-bold">💭 Acordar para o Mundo Digital</h1>
+    <nav class="mt-2 space-x-4">
+      <a href="index.html" class="text-blue-400 hover:underline">Início</a>
+      <a href="universo.html" class="text-blue-400 hover:underline">Universo</a>
+      <a href="psicologia.html" class="text-blue-400 hover:underline">Psicologia</a>
+      <a href="tecnologia.html" class="text-blue-400 hover:underline">Tecnologia</a>
+      <a href="reflexoes.html" class="text-blue-400 underline font-bold">Reflexões</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Reflexões que despertam</h2>
-      <p>Vivemos num mundo acelerado, cercado de informações e estímulos. Aqui refletimos sobre temas que nos fazem pensar: Quem somos? Para onde vamos? Qual o papel da nossa consciência em meio à tecnologia?</p>
-      <p>Palavras e ideias que inspiram, desafiam e renovam nossa visão de mundo.</p>
+  <main class="p-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Reflexões que despertam</h2>
+    <p class="mb-4">Vivemos num mundo acelerado, cercado de informações e estímulos. Aqui refletimos sobre temas que nos fazem pensar: <strong>Quem somos?</strong> <strong>Para onde vamos?</strong> <strong>Qual o papel da nossa consciência em meio à tecnologia?</strong></p>
+    <p class="mb-4">Palavras e ideias que inspiram, desafiam e renovam nossa visão de mundo.</p>
+
+    <section class="bg-gray-800 rounded-lg p-4 my-6">
+      <h3 class="text-2xl font-bold mb-2">💡 Apoie este Projeto com Bitcoin</h3>
+      <p class="mb-2">Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.<br/>Toda ajuda mantém nossos conteúdos no ar.</p>
+
+      <div class="bg-black text-green-400 font-mono p-2 rounded mb-2 text-center break-all" id="carteira">
+        bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a
+      </div>
+
+      <div class="text-center mb-2">
+        <button onclick="copiarCarteira()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+          📋 Copiar carteira
+        </button>
+      </div>
+
+      <div class="flex justify-center my-4">
+        <img src="qrcode.png" alt="QR Code da carteira Bitcoin" class="w-48 h-48">
+      </div>
+
+      <p class="text-center">Compartilhe: 
+        <a href="https://wa.me/?text=https://acordarparaomundodigital.com.br" target="_blank" class="text-blue-400 hover:underline">📲 WhatsApp</a> |
+        <a href="https://twitter.com/intent/tweet?text=Conheça%20o%20projeto:%20https://acordarparaomundodigital.com.br" target="_blank" class="text-blue-400 hover:underline">🐦 Twitter</a>
+      </p>
     </section>
 
-    <section>
-      <h3>Apoie nossa missão</h3>
-      <p>Se esse conteúdo fez sentido para você, considere apoiar com uma doação:</p>
-      <code style="display:block;background:#222;padding:10px;border-radius:5px;margin:10px auto;width:fit-content;">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</code>
-      <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code de doação em BTC" />
+    <section class="mt-10">
+      <h3 class="text-2xl font-bold mb-2">💭 Reflexões: Um Convite ao Despertar</h3>
+      <p class="mb-4">Em meio à pressa do cotidiano, esquecemos de parar. De respirar. De refletir. Esta seção é um convite para olhar para dentro, para questionar tudo o que parece ser absoluto. Porque é nas perguntas que moram as maiores transformações.</p>
+      <p class="mb-4">O que estamos fazendo com o nosso tempo? O que realmente importa? Por que deixamos os ruídos do mundo abafar a nossa própria intuição? As respostas não estão lá fora. Estão em você.</p>
+
+      <h4 class="text-xl font-semibold mt-6 mb-2">🧘 Silêncio, Consciência e Expansão</h4>
+      <p class="mb-4">Este é um espaço para pensamentos livres, desconstruções, ressignificações. Onde a ciência encontra a espiritualidade, onde o racional caminha lado a lado com o invisível. Porque tudo está interligado, e a mudança começa no olhar.</p>
+
+      <p class="text-green-400 font-semibold mt-6">✨ Permita-se acordar... para o mundo digital e para o mundo interior.</p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Acordar para o Mundo Digital. Todos os direitos reservados.</p>
-  </footer><section class="mt-12 text-center px-4">
-  <h2 class="text-2xl font-semibold text-green-500 mb-2">💡 Apoie este Projeto com Bitcoin</h2>
-  <p class="text-gray-400 mb-4">
-    Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.<br>
-    Toda ajuda mantém nossos conteúdos no ar.
-  </p>
-  
-  <!-- Endereço da carteira -->
-  <div class="bg-gray-800 text-green-400 p-2 rounded mb-2 max-w-full mx-auto overflow-auto" id="walletAddress">
-    bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a
-  </div>
-
-  <!-- Botão copiar -->
-  <button 
-    onclick="copyWallet()" 
-    class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
-    📋 Copiar carteira
-  </button>
-
-  <!-- QR Code -->
-  <div class="mt-6">
-    <img src="qrcode.png" alt="QR Code da carteira Bitcoin" class="mx-auto w-48 h-48">
-  </div>
-
-  <!-- Compartilhamento -->
-  <div class="mt-4 text-sm">
-    Compartilhe: 
-    <a href="https://wa.me/?text=Veja+esse+site:+https://acordarparaomundodigital.com.br" target="_blank" class="text-green-400 underline">📲 WhatsApp</a> |
-    <a href="https://twitter.com/intent/tweet?text=Veja+esse+site:+https://acordarparaomundodigital.com.br" target="_blank" class="text-blue-400 underline">🐦 Twitter</a>
-  </div>
-</section>
-
-<!-- Script de cópia -->
-<script>
-  function copyWallet() {
-    const wallet = document.getElementById("walletAddress").innerText;
-    navigator.clipboard.writeText(wallet).then(function() {
-      alert("Endereço da carteira copiado!");
-    }, function(err) {
-      alert("Erro ao copiar a carteira.");
-    });
-  }
-</script>
+  <footer class="text-center text-gray-400 mt-12 p-4 border-t border-gray-700">
+    © 2025 Acordar para o Mundo Digital. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
-<section class="mb-16">
-  <h2 class="text-3xl font-bold mb-4 flex items-center">
-    💭 <span class="ml-2">Reflexões: Um Convite ao Despertar</span>
-  </h2>
-
-  <p class="mb-4">
-    Em meio à pressa do cotidiano, esquecemos de parar. De respirar. De refletir.
-    Esta seção é um convite para olhar para dentro, para questionar tudo o que parece ser absoluto.
-    Porque é nas perguntas que moram as maiores transformações.
-  </p>
-
-  <p class="mb-4">
-    O que estamos fazendo com o nosso tempo? O que realmente importa?
-    Por que deixamos os ruídos do mundo abafar a nossa própria intuição?
-    As respostas não estão lá fora. Estão em você.
-  </p>
-
-  <h3 class="text-2xl font-semibold mt-8 mb-2 flex items-center">
-    🧘 <span class="ml-2">Silêncio, Consciência e Expansão</span>
-  </h3>
-  <p class="mb-4">
-    Este é um espaço para pensamentos livres, desconstruções, ressignificações.
-    Onde a ciência encontra a espiritualidade, onde o racional caminha lado a lado com o invisível.
-    Porque tudo está interligado, e a mudança começa no olhar.
-  </p>
-
-  <p class="text-blue-400 font-semibold">
-    ✨ Permita-se acordar... para o mundo digital e para o mundo interior.
-  </p>
-</section>
