@@ -39,11 +39,46 @@
     }
 
     h2 {
-      color: #ffa500;
+      color: #ffd700;
     }
 
-    ul {
-      padding-left: 20px;
+    .wallet-box {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .wallet-address {
+      font-family: monospace;
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+      word-break: break-all;
+      margin-bottom: 10px;
+      display: inline-block;
+      color: #0f0;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      background-color: #e5c100;
+    }
+
+    img.qr {
+      margin-top: 10px;
+      width: 180px;
+      height: auto;
     }
 
     footer {
@@ -68,34 +103,51 @@
   </header>
 
   <div class="container">
-    <h2>🧠 Psicologia Digital e Humana</h2>
-    <p>Vivemos em uma era onde emoções são expostas em postagens, e likes substituem abraços. A psicologia precisa acompanhar essa nova linguagem, onde a mente está mais conectada do que nunca, mas também mais sobrecarregada.</p>
-    <p>Como preservar a saúde mental num mundo onde a comparação é constante e a atenção é disputada por algoritmos?</p>
 
-    <h2>🌀 Questões que fazem pensar</h2>
-    <ul>
-      <li>Você vive para si ou para mostrar aos outros?</li>
-      <li>O silêncio te incomoda ou te liberta?</li>
-      <li>Você se conhece ou apenas se representa?</li>
-      <li>Já parou para ouvir a sua mente sem distrações?</li>
-    </ul>
+    <!-- DOAÇÃO -->
+    <div class="wallet-box">
+      <h3>💡 Apoie este Projeto com Bitcoin</h3>
+      <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
+      <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
+      <button onclick="copyAddress()">📋 Copiar carteira</button><br />
+      <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
+    </div>
 
-    <h2>🌱 Fortalecendo a mente em tempos digitais</h2>
-    <ul>
-      <li>Desconecte para reconectar consigo mesmo.</li>
-      <li>Respire. Feche os olhos. Permita-se parar.</li>
-      <li>Não acredite em tudo que pensa. Questione-se.</li>
-      <li>Valorize conversas reais, com presença e escuta.</li>
-    </ul>
+    <!-- CONTEÚDO ORIGINAL -->
+    <h2>🧠 Psicologia e Consciência</h2>
+    <p>A mente humana é um universo à parte, repleto de mistérios, emoções e percepções. Compreender como pensamos, sentimos e agimos é essencial para o despertar da consciência no mundo digital.</p>
+    <p>Vivemos tempos de sobrecarga de informações, onde o silêncio interior tornou-se raro. A psicologia nos oferece ferramentas para reconectar com nossa essência, identificar padrões mentais e resgatar o equilíbrio.</p>
 
-    <h2>🧘 Psicologia é Autoconhecimento</h2>
-    <p>Estudar a mente é mergulhar em um universo complexo e fascinante. Quanto mais nos compreendemos, mais livres nos tornamos dos condicionamentos externos.</p>
-    <p>Despertar para o mundo digital também é aprender a preservar a saúde emocional. A consciência é a chave.</p>
+    <!-- NOVA CONTINUAÇÃO -->
+    <h2>🔍 O Poder da Atenção</h2>
+    <p>Você já reparou como sua mente salta de um pensamento para outro sem parar? Esse fluxo constante nos afasta do presente. A atenção plena (mindfulness) é uma prática que pode transformar a forma como vivemos.</p>
+
+    <p>Estudos mostram que dedicar apenas alguns minutos por dia à observação dos próprios pensamentos ajuda a reduzir a ansiedade, aumenta o foco e melhora o bem-estar. E o melhor: é gratuito e está ao seu alcance agora mesmo.</p>
+
+    <h2>🌌 A Mente como Portal</h2>
+    <p>Quando você silencia, o mundo interno fala. Ideias, intuições, percepções profundas emergem do inconsciente. A mente não é apenas um repositório de memórias, mas um canal de conexão com algo maior.</p>
+
+    <p>Será que nossos pensamentos são apenas nossos? Ou estamos sintonizados em uma grande rede mental, onde cada um influencia o todo? A psicologia moderna começa a explorar isso com mais profundidade.</p>
+
+    <h2>💬 Experimente Agora</h2>
+    <p>Feche os olhos por um instante. Respire. Perceba o que está sentindo. O que sua mente está dizendo? Essa simples pausa já é o começo de uma nova jornada interior.</p>
+
+    <p>Continue conosco nessa investigação. Questione. Observe. Desperte.</p>
+
   </div>
 
   <footer>
     © 2025 Acordar para o Mundo Digital. Todos os direitos reservados.
   </footer>
+
+  <script>
+    function copyAddress() {
+      const address = document.getElementById('btcAddress').innerText;
+      navigator.clipboard.writeText(address).then(() => {
+        alert("Carteira copiada com sucesso!");
+      });
+    }
+  </script>
 
 </body>
 </html>
