@@ -8,14 +8,15 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #f1f1f1;
+      background-color: #ffffff;
+      color: #333;
     }
 
     header {
-      background-color: #000;
+      background-color: #f4f4f4;
       padding: 20px;
       text-align: center;
+      border-bottom: 1px solid #ccc;
     }
 
     header h1 {
@@ -23,47 +24,60 @@
       font-size: 26px;
     }
 
-    nav a {
-      color: #f1f1f1;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+    nav {
+      margin-top: 10px;
     }
+
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      margin: 5px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    nav a[href="index.html"] { background-color: #ffd700; color: #000; }
+    nav a[href="universo.html"] { background-color: #00bfff; color: #000; }
+    nav a[href="psicologia.html"] { background-color: #ff69b4; color: #000; }
+    nav a[href="tecnologia.html"] { background-color: #7fff00; color: #000; }
+    nav a[href="reflexoes.html"] { background-color: #ff4500; color: #fff; }
+    nav a[href="tempo.html"] { background-color: #9370db; color: #fff; }
+    nav a[href="saude.html"] { background-color: #00ff7f; color: #000; }
 
     .container {
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #1e1e1e;
-      border-radius: 10px;
     }
 
     h2 {
-      color: #4caf50;
+      color: #228B22;
     }
 
     .wallet-box {
-      background-color: #222;
+      background-color: #f9f9f9;
       padding: 20px;
       border-radius: 8px;
       margin-top: 30px;
       text-align: center;
+      border: 1px solid #ddd;
     }
 
     .wallet-address {
       font-family: monospace;
-      background: #333;
+      background: #eaeaea;
       padding: 10px;
       border-radius: 5px;
-      word-break: break-all;
+      word-break: break-word;
       margin-bottom: 10px;
       display: inline-block;
-      color: #0f0;
+      color: #333;
     }
 
     button {
-      background-color: #4caf50;
-      color: #000;
+      background-color: #32cd32;
+      color: #fff;
       padding: 10px 16px;
       border: none;
       border-radius: 5px;
@@ -72,7 +86,7 @@
     }
 
     button:hover {
-      background-color: #3e9142;
+      background-color: #28a428;
     }
 
     img.qr {
@@ -84,28 +98,31 @@
     footer {
       text-align: center;
       margin-top: 40px;
+      padding: 20px;
       font-size: 14px;
-      color: #888;
+      color: #666;
+      background-color: #f4f4f4;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
 
   <header>
-  <h1 style="color: white;">Acordar para o Mundo Digital</h1>
-  <nav style="margin-top: 10px;">
-    <a href="index.html" style="color: white; font-weight: bold; margin-right: 10px;">Início</a>
-    <a href="universo.html" style="color: mediumorchid; font-weight: bold; margin-right: 10px;">Universo</a>
-    <a href="psicologia.html" style="color: deeppink; font-weight: bold; margin-right: 10px;">Psicologia</a>
-    <a href="tecnologia.html" style="color: dodgerblue; font-weight: bold; margin-right: 10px;">Tecnologia</a>
-    <a href="reflexoes.html" style="color: gold; font-weight: bold; margin-right: 10px;">Reflexões</a>
-    <a href="tempo.html" style="color: limegreen; font-weight: bold; margin-right: 10px;">Tempo</a>
-    <a href="saude.html" style="color: orange; font-weight: bold; margin-right: 10px;">Saúde</a>
-  </nav>
-</header>
+    <h1>Acordar para o Mundo Digital</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="universo.html">Universo</a>
+      <a href="psicologia.html">Psicologia</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="reflexoes.html">Reflexões</a>
+      <a href="tempo.html">Tempo</a>
+      <a href="saude.html">Saúde</a>
+    </nav>
+  </header>
 
   <div class="container">
-    <h2>🌿 Saúde: Corpo, Mente e Equilíbrio</h2>
+    <h2>🧬 Saúde: Corpo, Mente e Equilíbrio</h2>
     <p>Um corpo saudável é a base para uma mente em paz. Nesta seção, abordamos a importância da alimentação consciente, da prática regular de atividades físicas e do cuidado com o bem-estar emocional. A verdadeira saúde vai além da ausência de doenças — ela é a harmonia entre corpo, mente e espírito.</p>
 
     <p>🥦 Alimentar-se bem é um ato de amor próprio. Evitar excessos, escolher alimentos naturais e compreender o impacto do que comemos é essencial para viver com mais energia e disposição.</p>
@@ -119,6 +136,7 @@
     <div class="wallet-box">
       <h3>💡 Apoie este Projeto com Bitcoin</h3>
       <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
+
       <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
       <button onclick="copyAddress()">📋 Copiar carteira</button><br />
       <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
