@@ -36,7 +36,49 @@
 
   <footer>
     <p>&copy; 2025 Acordar para o Mundo Digital. Todos os direitos reservados.</p>
-  </footer>
+  </footer><section class="mt-12 text-center px-4">
+  <h2 class="text-2xl font-semibold text-green-500 mb-2">💡 Apoie este Projeto com Bitcoin</h2>
+  <p class="text-gray-400 mb-4">
+    Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.<br>
+    Toda ajuda mantém nossos conteúdos no ar.
+  </p>
+  
+  <!-- Endereço da carteira -->
+  <div class="bg-gray-800 text-green-400 p-2 rounded mb-2 max-w-full mx-auto overflow-auto" id="walletAddress">
+    bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a
+  </div>
+
+  <!-- Botão copiar -->
+  <button 
+    onclick="copyWallet()" 
+    class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded transition duration-200">
+    📋 Copiar carteira
+  </button>
+
+  <!-- QR Code -->
+  <div class="mt-6">
+    <img src="qrcode.png" alt="QR Code da carteira Bitcoin" class="mx-auto w-48 h-48">
+  </div>
+
+  <!-- Compartilhamento -->
+  <div class="mt-4 text-sm">
+    Compartilhe: 
+    <a href="https://wa.me/?text=Veja+esse+site:+https://acordarparaomundodigital.com.br" target="_blank" class="text-green-400 underline">📲 WhatsApp</a> |
+    <a href="https://twitter.com/intent/tweet?text=Veja+esse+site:+https://acordarparaomundodigital.com.br" target="_blank" class="text-blue-400 underline">🐦 Twitter</a>
+  </div>
+</section>
+
+<!-- Script de cópia -->
+<script>
+  function copyWallet() {
+    const wallet = document.getElementById("walletAddress").innerText;
+    navigator.clipboard.writeText(wallet).then(function() {
+      alert("Endereço da carteira copiado!");
+    }, function(err) {
+      alert("Erro ao copiar a carteira.");
+    });
+  }
+</script>
 </body>
 </html>
 <section class="mb-16">
