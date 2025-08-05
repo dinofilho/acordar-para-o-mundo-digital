@@ -4,145 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acordar para o Mundo Digital</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f0f0f0;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-    }
-
-    header {
-      background-color: #000;
-      padding: 20px;
-    }
-
-    nav a {
-      color: #00ff88;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      margin-top: 40px;
-      color: #00ff88;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 20px auto;
-      font-size: 1.1em;
-      line-height: 1.6em;
-    }
-
-    .btn-group {
-      margin: 30px;
-    }
-
-    .btn-group a {
-      background: #00ff88;
-      color: #000;
-      padding: 12px 24px;
-      margin: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      display: inline-block;
-    }
-
-    .btn-group a:hover {
-      background-color: #00cc66;
-    }
-
-    .wallet {
-      background: #222;
-      padding: 10px 20px;
-      border-radius: 8px;
-      margin: 20px auto;
-      font-family: monospace;
-      word-break: break-all;
-      display: inline-block;
-    }
-
-    img {
-      margin-top: 20px;
-      width: 200px;
-      height: 200px;
-      border: 2px solid #00ff88;
-      border-radius: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-    }
-
-    .copiado {
-      color: #00ff88;
-      margin-top: 10px;
-      font-size: 0.9em;
-      display: none;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="universo.html">Universo</a>
-      <a href="psicologia.html">Psicologia</a>
-      <a href="tecnologia.html">Tecnologia</a>
-      <a href="reflexoes.html">Reflexões</a>
+<body class="bg-gray-900 text-white font-sans">
+
+  <header class="bg-gray-800 shadow-md p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+    <h1 class="text-2xl font-bold text-center sm:text-left mb-2 sm:mb-0">🌌 Acordar para o Mundo Digital</h1>
+    <nav class="flex flex-wrap gap-4 justify-center sm:justify-end">
+      <a href="universo.html" class="hover:text-blue-400 transition">Universo</a>
+      <a href="psicologia.html" class="hover:text-blue-400 transition">Psicologia</a>
+      <a href="tecnologia.html" class="hover:text-blue-400 transition">Tecnologia</a>
+      <a href="reflexoes.html" class="hover:text-blue-400 transition">Reflexões</a>
+      <a href="tempo.html" class="hover:text-blue-400 transition">Tempo</a>
     </nav>
   </header>
 
-  <main>
-    <h1>Acordar para o Mundo Digital</h1>
-    <p>
-      Este projeto tem como objetivo despertar a consciência das pessoas por meio de conteúdos informativos, científicos, filosóficos e psicológicos. Unindo conhecimento e reflexão com o poder da tecnologia, buscamos transformar mentes e corações. 🚀
-    </p>
+  <main class="max-w-3xl mx-auto p-6">
+    <section class="mb-8">
+      <h2 class="text-3xl font-bold mb-4">Bem-vindo ao Despertar!</h2>
+      <p class="text-lg leading-relaxed">
+        Nosso objetivo é abrir sua mente para questões que envolvem o <strong>universo, consciência, sociedade e tecnologia</strong>.  
+        Este projeto é independente, livre e tem o propósito de despertar novas ideias, promover debates e buscar o sentido real das coisas.
+      </p>
+    </section>
 
-    <div class="btn-group">
-      <a href="universo.html">Explorar o Universo</a>
-      <a href="psicologia.html">Refletir com a Psicologia</a>
-      <a href="tecnologia.html">Conhecer a Tecnologia</a>
-      <a href="reflexoes.html">Ler Reflexões</a>
-    </div>
+    <section class="mb-8">
+      <h3 class="text-2xl font-semibold mb-2">Ajude-nos a continuar!</h3>
+      <p class="mb-4">Você pode apoiar este projeto enviando qualquer valor em Bitcoin para o QR Code abaixo. Toda ajuda será usada para manter o projeto ativo e expandir nosso conteúdo.</p>
+      <div class="flex justify-center">
+        <img src="qrcode.png" alt="QR Code da carteira Bitcoin" class="w-48 h-48">
+      </div>
+    </section>
 
-    <h2>💚 Apoie o projeto</h2>
-    <p>Você pode contribuir com doações em Bitcoin para mantermos o site e o laboratório de segurança digital:</p>
-
-    <div class="wallet" id="wallet">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div>
-    <button onclick="copiarCarteira()">📋 Copiar carteira</button>
-    <div class="copiado" id="mensagem">Carteira copiada com sucesso!</div>
-
-    <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu&size=200x200" alt="QR Code Bitcoin">
+    <section class="text-center mt-10">
+      <p class="text-sm text-gray-400">acordarparaomundodigital.com.br • Todos os direitos reservados © 2025</p>
+    </section>
   </main>
 
-  <footer>
-    © 2025 - Projeto Acordar para o Mundo Digital • <a href="https://github.com/dinofilho/acordar-para-o-mundo-digital" target="_blank" style="color:#00ff88;">GitHub</a>
-  </footer>
-
-  <script>
-    function copiarCarteira() {
-      const texto = document.getElementById("wallet").innerText;
-      navigator.clipboard.writeText(texto).then(() => {
-        const msg = document.getElementById("mensagem");
-        msg.style.display = "block";
-        setTimeout(() => {
-          msg.style.display = "none";
-        }, 2000);
-      });
-    }
-  </script>
 </body>
 </html>
