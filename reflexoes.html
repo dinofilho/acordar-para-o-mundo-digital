@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,88 +9,85 @@
       font-family: Arial, sans-serif;
       background-color: #111;
       color: #f1f1f1;
-    }
+    }header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
 
-    header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
+nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
 
-    nav a {
-      color: #f1f1f1;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1e1e1e;
-      border-radius: 10px;
-    }
+h2 {
+  color: #ffd700;
+}
 
-    h2 {
-      color: #ffd700;
-    }
+.wallet-box {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+  text-align: center;
+}
 
-    .wallet-box {
-      background-color: #222;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 30px;
-      text-align: center;
-    }
+.wallet-address {
+  font-family: monospace;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+  word-break: break-word;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #0f0;
+}
 
-    .wallet-address {
-      font-family: monospace;
-      background: #333;
-      padding: 10px;
-      border-radius: 5px;
-      word-break: break-all;
-      margin-bottom: 10px;
-      display: inline-block;
-      color: #0f0;
-    }
+button {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
-    button {
-      background-color: #ffd700;
-      color: #000;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
+button:hover {
+  background-color: #e5c100;
+}
 
-    button:hover {
-      background-color: #e5c100;
-    }
+img.qr {
+  margin-top: 10px;
+  width: 180px;
+  height: auto;
+}
 
-    img.qr {
-      margin-top: 10px;
-      width: 180px;
-      height: auto;
-    }
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
 
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #888;
-    }
   </style>
 </head>
-<body>
-
-  <header>
+<body>  <header>
     <h1>Acordar para o Mundo Digital</h1>
     <nav>
       <a href="index.html">Início</a>
@@ -100,39 +96,30 @@
       <a href="tecnologia.html">Tecnologia</a>
       <a href="reflexoes.html">Reflexões</a>
     </nav>
-  </header>
-
-  <div class="container">
+  </header>  <div class="container">
     <h2>💭 Reflexões: Um Convite ao Despertar</h2>
     <p>Vivemos num mundo acelerado, cercado de informações e estímulos. Aqui refletimos sobre temas que nos fazem pensar: Quem somos? Para onde vamos? Qual o papel da nossa consciência em meio à tecnologia?</p>
     <p>Palavras e ideias que inspiram, desafiam e renovam nossa visão de mundo. Porque é nas perguntas que moram as maiores transformações.</p>
-    <p>🧘‍♂️ Este é um espaço para pensamentos livres, onde a ciência encontra a espiritualidade, e o racional caminha com o invisível.</p>
+    <p>🧘‍ Este é um espaço para pensamentos livres, onde a ciência encontra a espiritualidade, e o racional caminha com o invisível.</p><div class="wallet-box">
+  <h3>💡 Apoie este Projeto com Bitcoin</h3>
+  <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
 
-    <div class="wallet-box">
-      <h3>💡 Apoie este Projeto com Bitcoin</h3>
-      <p>Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin.</p>
+  <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
+  <button onclick="copyAddress()">📋 Copiar carteira</button><br />
 
-      <div class="wallet-address" id="btcAddress">bc1q9fz4mnqnshxak4c5rfq0scype8djyx360l75vu</div><br />
-      <button onclick="copyAddress()">📋 Copiar carteira</button><br />
+  <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
 
-      <img src="btc_qrcode.png" alt="QR Code da carteira Bitcoin" class="qr" />
+  <p>Compartilhe: ➡️📱 WhatsApp | 🐞 Twitter</p>
+</div>
 
-      <p>Compartilhe: 📲 WhatsApp | 🐦 Twitter</p>
-    </div>
-  </div>
-
-  <footer>
+  </div>  <footer>
     © 2025 Acordar para o Mundo Digital. Todos os direitos reservados.
-  </footer>
-
-  <script>
+  </footer>  <script>
     function copyAddress() {
       const address = document.getElementById('btcAddress').innerText;
       navigator.clipboard.writeText(address).then(() => {
         alert("Carteira copiada com sucesso!");
       });
     }
-  </script>
-
-</body>
+  </script></body>
 </html>
