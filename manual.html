@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manual Digital</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    .container h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .container p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .manual-image {
+      width: 90%;
+      max-width: 500px;
+      cursor: pointer;
+      border: 3px solid #ffd700;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .manual-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
-<body style="background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px;">
-  <h1>📘 Manual Digital</h1>
-  
-  <a href="https://acordarparaomundodigital.com.br" target="_blank">
-    <img src="manual_digital.jpg" alt="Abrir Manual" style="width:100%; max-width:500px; border-radius:12px; box-shadow:0 0 10px #0f0;" />
-  </a>
+<body>
+  <div class="container">
+    <h1>Manual de Sobrevivência Digital</h1>
+    <p>Quando estiver bem, consulte-o. Quando estiver mal, consulte também.</p>
+    <p>✨ Uma simples viagem básica ao essencial ✨</p>
 
-  <p style="margin-top:20px;">Clique na imagem acima para acessar o conteúdo completo.</p>
+    <a href="https://acordarparaomundodigital.com.br" target="_blank">
+      <img src="manual_digital.jpg" alt="Manual Digital" class="manual-image" />
+    </a>
+  </div>
 </body>
 </html>
