@@ -1,67 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acordar para o Mundo Digital</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Sobrevivência</title>
 </head>
-<body class="bg-gray-900 text-white font-sans">
-
-  <header class="bg-gray-800 shadow-md p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-    <h1 class="text-2xl font-bold text-center sm:text-left mb-2 sm:mb-0">🌌 Acordar para o Mundo Digital</h1>
-    <nav style="margin-top: 10px;">
-  <a href="universo.html" style="color: mediumorchid; font-weight: bold; margin-right: 10px;">Universo</a>
-  <a href="psicologia.html" style="color: deeppink; font-weight: bold; margin-right: 10px;">Psicologia</a>
-  <a href="tecnologia.html" style="color: dodgerblue; font-weight: bold; margin-right: 10px;">Tecnologia</a>
-  <a href="reflexoes.html" style="color: gold; font-weight: bold; margin-right: 10px;">Reflexões</a>
-  <a href="tempo.html" style="color: limegreen; font-weight: bold; margin-right: 10px;">Tempo</a>
-  <a href="saude.html" style="color: orange; font-weight: bold;">Saúde</a>
-</nav>
-  </header>
-
-  <main class="max-w-3xl mx-auto p-6">
-    <section class="mb-8">
-      <h2 class="text-3xl font-bold mb-4">Bem-vindo ao Despertar!</h2>
-      <p class="text-lg leading-relaxed">
-        Nosso objetivo é abrir sua mente para questões que envolvem o <strong>universo, consciência, sociedade e tecnologia</strong>.  
-        Este projeto é independente, livre e tem o propósito de despertar novas ideias, promover debates e buscar o sentido real das coisas.
-      </p>
-    </section>
-
-    <section id="doacoes" style="text-align: center; padding: 40px 20px; background-color: #0b0b0b;">
-  <h2 style="color: #00ff00; font-size: 28px;">💡 Apoie este Projeto com Bitcoin</h2>
-  <p style="color: #ccc; max-width: 600px; margin: 20px auto; font-size: 16px;">
-    Se este projeto te inspira, você pode nos ajudar com qualquer valor em Bitcoin. Toda ajuda mantém nossos conteúdos no ar.
-  </p>
-  
-  <input id="wallet" value="bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a" readonly style="padding: 10px; width: 90%; max-width: 400px; border-radius: 5px; border: 1px solid #555; background: #111; color: #0f0; text-align: center; margin-bottom: 10px;">
-  
-  <br>
-  <button onclick="copiarCarteira()" style="background: #00ff00; color: black; padding: 10px 20px; border: none; border-radius: 5px; margin: 10px 0;">📋 Copiar carteira</button>
-  
-  <br><br>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?data=bc1qqv5caf75zuqxuaq3cjf2p9s7n4x67sv46xnm5a&size=200x200" alt="QR Code" style="margin-top: 10px;">
-  
-  <p style="color: #aaa; margin-top: 20px;">Compartilhe:</p>
-  <a href="https://wa.me/?text=Ajude%20o%20projeto:%20https://acordarparaomundodigital.com.br" style="color:#25D366; margin-right: 10px;">📲 WhatsApp</a>
-  <a href="https://twitter.com/intent/tweet?text=Ajude%20o%20projeto:%20https://acordarparaomundodigital.com.br" style="color:#1DA1F2;">🐦 Twitter</a>
-</section>
-
-<script>
-  function copiarCarteira() {
-    const carteira = document.getElementById('wallet');
-    carteira.select();
-    carteira.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-    alert('Carteira copiada com sucesso!');
-  }
-</script>
-
-    <section class="text-center mt-10">
-      <p class="text-sm text-gray-400">acordarparaomundodigital.com.br • Todos os direitos reservados © 2025</p>
-    </section>
-  </main>
-
+<body style="background-color: black; text-align: center; padding: 50px;">
+  <a href="https://acordarparaomundodigital.com.br/manual.html" target="_blank">
+    <img src="manual_digital.png" alt="Manual de Sobrevivência" style="max-width: 100%; height: auto;">
+  </a>
 </body>
 </html>
